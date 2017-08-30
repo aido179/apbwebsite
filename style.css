@@ -53,20 +53,11 @@ a:hover{
   display:none;
   visibility:hidden;
 }
-.showMobile{
-  display:inline;
-  visibility: visible;
-}
 @media (min-width: 600px) {
   .hideMobile{
     display:inherit;
     visibility: visible;
   }
-  .showMobile{
-    display:none;
-    visibility:hidden;
-  }
-
 }
 
 /* SECTION SPECIFIC STYLES */
