@@ -114,6 +114,7 @@ nav ul li{
   border-bottom: solid 3px #903;
   transition: border-bottom 0.3s;
   max-width: 100px;
+  padding:2px;
 }
 
 nav ul li:hover{
