@@ -182,6 +182,10 @@ h2{
   line-height: 3rem;
   border-bottom: solid 3px #333;
 }
+h3{
+  font-size: 1.5em;
+    margin-top: 2em;
+}
 
 section p{
   font-size:1rem;
@@ -193,6 +197,43 @@ section p{
 section article{
   padding: 0 4rem;
   clear:both;
+}
+
+.testimonial{
+  color:#737373;
+  margin-top:2rem;
+  padding: 5em 0 0 0;
+  box-shadow: 3px 6px 17px 0px #cacaca;
+}
+.testimonial .signature{
+  font-size: 1.5rem;
+  font-style:normal;
+  color:#fff;
+  display: block;
+  width: 100%;
+  text-align: right;
+  margin-bottom: 2rem;
+}
+.testimonial .grey{
+  color:#c3c3c3;
+  font-size: 1rem;
+}
+.testimonial-text{
+  font-style:italic;
+  color: #fff;
+  padding: 1em 3em;
+  background-color: rgba(33, 26, 17, 0.85);
+}
+
+.forklifts{
+  background:
+    url(containers1.jpeg) no-repeat center center;
+  background-size:cover;
+}
+.buttons{
+  background:
+    url(button-pic.jpg) no-repeat center center;
+  background-size:cover;
 }
 
 .projectOverlay{
