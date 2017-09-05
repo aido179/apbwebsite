@@ -61,28 +61,35 @@ a:hover{
 }
 
 /* SECTION SPECIFIC STYLES */
+.nav_container_default{
+  width:100%;
+  background: rgba(8, 11, 21, 0.28);
+  position: fixed;
+  z-index:999;
+}
 nav{
   box-sizing: border-box;
   display:flex;
   flex-direction:row;
   justify-content: space-between;
   align-items: flex-end;
-  height:4rem;
+  height:6rem;
   max-width:100%;
-  margin: 1rem 10px 2rem 10px;
+  margin: 0 10px 0 10px;
+  padding: 1rem 0 2rem 0;
 }
 /* small */
 @media (min-width: 600px) {
   nav{
     width:550px;
-    margin: 1rem auto 2rem auto;
+    margin: 0 auto 0 auto;
   }
 }
 /* large */
 @media (min-width: 900px) {
   nav{
     width:850px;
-    margin: 1rem auto 2rem auto;
+    margin: 0 auto 0 auto;
   }
 }
 nav ul{
@@ -109,18 +116,19 @@ nav ul li{
   display:block;
   margin: 0 0 0 0;
   font-size: 1rem;
-  border-bottom: solid 3px #903;
-  transition: border-bottom 0.3s;
+  border-bottom: solid 2px #903;
+  transition: border-bottom 0.1s;
   max-width: 100px;
   padding:2px;
 }
 
 nav ul li:hover{
-  border-bottom: solid 5px #333;
+  border-bottom: solid 3px #333;
 }
 nav ul li a{
   text-decoration: none;
   text-transform: uppercase;
+  color: hsla(295, 18%, 97%, 1);
 }
 
 nav .logo{
@@ -128,7 +136,7 @@ nav .logo{
   margin: 0 auto 0 auto;
   font-family: 'Open Sans', sans-serif;
   font-size: 1rem;
-  color: #333;
+  color: hsla(295, 18%, 97%, 1);
 }
 /* small */
 @media (min-width: 600px) {
@@ -148,20 +156,33 @@ main{
 #header{
   display:flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  padding-top: 6rem;
   background-color: #aaa;
   height:500px;
-  width:100%;
-  background: url(city1.jpeg) no-repeat center center;
+  max-width:100%;
+  background:linear-gradient( to right, rgba(0, 0, 0, 1), rgba(45, 29, 39, 1), rgba(46, 47, 70, 1), rgba(0, 0, 0, 1) );
+  background: url(city2.jpeg) no-repeat center center;
   background-size: cover;
   text-align: center;
-
+  overflow: hidden;
+  position:relative;
 }
-#headerh1{
-  background-color: rgba(0,0,0, 0.4);
+#header_top{
+  text-transform: uppercase;
+  font-weight:bold;
+  letter-spacing: 0.5rem;
   padding: 0 1rem;
   line-height: 5rem;
+  margin-top:-3rem;
+    text-shadow: 1px 1px 1px #000;
+}
+
+#header_bottom{
+  text-transform: uppercase;
+  line-height:3em;
+      text-shadow: 1px 1px 1px #000;
 }
 /* small */
 @media (min-width: 660px) { /*special width to match text width*/
@@ -174,6 +195,26 @@ main{
   /*text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.4);*/
   font-size:3rem;
   display: block;
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+}
+#header_top h1{
+  margin-bottom:0px;
+}
+#header_bottom h1{
+  /*font-family: 'Lora', sans-serif;
+  font-weight: 800;*/
+  font-size:2rem;
+}
+
+/* small */
+@media (min-width: 600px) {
+  #header h1{
+    font-size:5rem;
+  }
+  #header_bottom h1{
+    font-size:3rem;
+  }
 }
 
 h2{
