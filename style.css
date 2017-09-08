@@ -4,6 +4,7 @@ body{
   font-size: 16px;
   line-height: 12px;
   font-family: 'Open Sans', sans-serif;
+  background:#fafafa;
 }
 
 section{
@@ -231,78 +232,77 @@ h3{
 section p{
   font-size:1rem;
   line-height:2rem;
-  text-align: justify;
+  text-align: left;
   text-justify: inter-word;
 }
 
 section article{
-  padding: 0 2rem;
+  padding: 0 2rem 1rem 2rem;
   clear:both;
 }
 @media (min-width: 600px) {
+  section p{
+    text-align: justify;
+  }
   section article{
-    padding: 0 4rem;
+    padding: 0 4rem 2rem 4rem;
     clear:both;
   }
 }
-.testimonial-container{
-  display:flex;
-  flex-direction:column;
-  justify-content: space-between;
-}
+
 .testimonial{
-  color:#737373;
+  background: #fff;
+  box-shadow:0 2px 5px rgba(0,0,0,0.2);
+  padding: 2em;
+  margin-bottom:2em;
+}
+blockquote{
+  border-top:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+	position:relative;
+	quotes: "\201C""\201D""\201C""\201D";
+  margin-left:0;
+  margin-right:0;
+}
+@media (min-width: 600px) {
+  blockquote{
+    margin-left:3em;
+    margin-right:3em;
+  }
+}
+blockquote:after {
+	color:#ccc;
+	font-family:Source Sans Pro;
+	content: open-quote;
+	font-size:80px;
+	position:absolute;
+	left:50%;
+	bottom:calc(100% - 20px);
+	background:#fff;
+	height:55px;
+	width: 55px;
+	line-height:normal;
+	text-align:center;
+	transform:translateX(-50%);
+}
+
+cite{
+  display: inline-block;
+  box-sizing: border-box;
   width:100%;
-  position:relative;
-  margin-top:2rem;
-  padding: 0;
-  box-shadow: 3px 6px 17px 0px #cacaca;
-}
-/* small */
-@media (min-width: 750px) {
-  .testimonial{
-    width:45%;
-  }
-  .testimonial-container{
-    flex-direction:row;
-  }
-}
-.testimonial p{
-  font-size: 0.8rem;
-  line-height: 1.5rem;
+  padding: 1em 3em 1em 3em;
+  text-align: right;
+  line-height:1.6em;
 }
 .testimonial .signature{
-  font-size: 1.5rem;
   font-style:normal;
-  color:#fff;
-  display: block;
-  width: 100%;
-  text-align: right;
-  margin-bottom: 2rem;
+  color:#101010;
 }
 .testimonial .grey{
   color:#c3c3c3;
   font-size: 1rem;
 }
-.testimonial-text{
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-  font-style:italic;
-  color: #fff;
-  padding: 1em 3em;
-  background-color: rgba(33, 26, 17, 0.97);
-}
 
-.forklifts{
-  background:
-    url(containers1.jpeg) no-repeat center center;
-  background-size:cover;
-}
-.buttonfactory{
-  background:
-    url(button-pic.jpg) no-repeat center center;
-  background-size:cover;
-}
 .flexfix{
   width:100%;
   height:100%;
@@ -372,6 +372,9 @@ section article{
     display:block;
     visibility: visible;
   }
+}
+ul.contact{
+  padding:0;
 }
 
 ul.contact li{
