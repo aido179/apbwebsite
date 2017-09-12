@@ -164,7 +164,7 @@ main{
   height:500px;
   max-width:100%;
   background:linear-gradient( to right, rgba(0, 0, 0, 1), rgba(45, 29, 39, 1), rgba(46, 47, 70, 1), rgba(0, 0, 0, 1) );
-  background: url(city2.jpeg) no-repeat center center;
+  background: url(city2_small.jpeg) no-repeat center center;
   background-size: cover;
   text-align: center;
   overflow: hidden;
